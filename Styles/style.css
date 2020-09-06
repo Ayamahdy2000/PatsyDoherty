@@ -1,0 +1,316 @@
+body {
+  background-color: white;
+  background-image: url(../Images/bg.jpg);
+  background-repeat: repeat;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.parent {
+  width: 90%;
+  border: 6px solid #eaeaea;
+  background: #ffff;
+  margin: 70px auto;
+}
+.parent header .navbar-brand {
+  font-family: "Qwigley", Helvetica, Sans-serif;
+  color: #4f4d47;
+  font-size: 50px;
+  font-weight: 400;
+}
+.parent header .title {
+  font-size: 11px;
+  color: #999999;
+}
+.parent header nav.navbar-light .navbar-toggler {
+  margin: 0 0 0 auto;
+}
+.parent header nav.navbar-light .navbar-toggler:focus {
+  outline: none;
+}
+.parent header nav.navbar-light .navbar-nav .nav-link {
+  color: #777;
+  margin-left: 13px;
+  font-size: 15px;
+}
+.parent header nav.navbar-light .navbar-nav .nav-link.active {
+  color: black;
+}
+.parent header nav.navbar-light .navbar-nav .nav-link:hover {
+  color: #999999;
+  transition: all 0.25s ease-in-out;
+}
+.parent header nav.navbar-light .navbar-nav .nav-link:focus {
+  color: #333;
+}
+.parent .hat-desgin h2 {
+  color: #777;
+  font-size: 14px;
+  color: #898989;
+}
+.parent .hat-desgin a.btn:hover, .parent .hat-desgin a.btn:focus {
+  border: 2px solid #4f4d47;
+  color: #4f4d47;
+  transition: all 0.25s ease-in-out;
+}
+.parent .news p {
+  color: #898989;
+  font-size: 15px;
+}
+.parent .news p span a {
+  color: #e74c3c;
+}
+.parent .news p span a:hover {
+  text-decoration: underline #898989;
+  color: #898989;
+}
+.parent .news .home-photo {
+  position: relative;
+}
+.parent .news .home-photo .box {
+  border: 15px solid #fff;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+  top: 8%;
+  right: 8%;
+}
+.parent .about .text p {
+  font-family: "Oxygen", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #898989;
+  margin-top: 5px;
+}
+.parent .about .text p span {
+  text-transform: uppercase;
+  color: #4f4d47;
+}
+.parent .about .text .left {
+  background-color: #495057;
+  color: #ffff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 25px;
+}
+.parent .about .text .right h4 {
+  font-size: 15px;
+  color: #898989;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+}
+.parent .about .text .right p {
+  color: #4f4d47;
+  font-weight: 400;
+}
+.parent .first-services {
+  position: relative;
+}
+.parent .first-services .heading-box {
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  background-color: #dadada;
+  color: #4f4d47;
+  padding: 20px 0 15px;
+  text-align: center;
+  width: 40%;
+  z-index: 1;
+}
+.parent .first-services .heading-box h4 {
+  font-size: 18px;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 600;
+}
+@media screen and (max-width: 800px) {
+  .parent .first-services .heading-box {
+    position: static;
+    width: 70%;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 5px;
+  }
+  .parent .first-services .heading-box h4 {
+    font-size: 15px;
+  }
+}
+.parent .first-services .box {
+  border: 15px solid #fff;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  right: 15%;
+}
+@media screen and (max-width: 800px) {
+  .parent .first-services .box {
+    display: none;
+  }
+}
+.parent .first-services .box-height {
+  height: 50%;
+}
+.parent .first-services .text {
+  color: #e74c3c;
+  font-weight: 300;
+}
+.parent .collection p {
+  font-size: 15px;
+  color: #898989;
+}
+.parent .collection .btn {
+  background-color: transparent;
+}
+.parent .collection .btn:hover {
+  background: #e0e0e0;
+  box-shadow: none;
+  transition: all 0.25s ease-in-out;
+}
+.parent .collection .active {
+  background: #e0e0e0;
+  box-shadow: none;
+}
+.parent .collection figure {
+  position: relative;
+}
+.parent .collection figure.effect-moses {
+  background: -webkit-linear-gradient(-45deg, #EC65B7 0%, #05E0D8 100%);
+  background: linear-gradient(-45deg, #EC65B7 0%, #05E0D8 100%);
+}
+.parent .collection figure.effect-moses img {
+  opacity: 0.85;
+}
+.parent .collection figure.effect-moses figcaption {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+.parent .collection figure.effect-moses figcaption h2 {
+  width: 50%;
+  font-size: 1.6em;
+  color: #fff;
+  border-top: 2px solid #dadada;
+  padding: 20px;
+}
+.parent .collection figure.effect-moses figcaption p {
+  width: 45%;
+  border-top: 2px solid #dadada;
+  padding: 20px;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  color: white;
+  text-align: right;
+  font-family: "Oxygen", sans-serif;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.parent .collection figure.effect-moses:hover {
+  background: linear-gradient(-45deg, #EC65B7 0%, #05E0D8 100%);
+}
+.parent .collection figure.effect-moses:hover img {
+  opacity: 0.6;
+}
+.parent .collection figure.effect-moses:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(150px, 150px, 0);
+  transform: translate3d(150px, 150px, 0);
+}
+.parent .resume .data {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #2f2f2f;
+}
+@media screen and (max-width: 800px) {
+  .parent .resume .data {
+    margin-top: 10px;
+  }
+}
+.parent .resume p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2f2f2f;
+}
+.parent .resume p.sub-p {
+  color: #898989;
+}
+.parent .resume .line {
+  border-top: 1px solid #dadada;
+  text-align: center;
+}
+.parent .resume .line::after {
+  content: "resume";
+  position: relative;
+  display: inline-block;
+  position: relative;
+  top: -0.9em;
+  font-size: 18px;
+  color: #898989;
+  padding: 0 0.25em;
+  background: white;
+  font-family: "Qwigley", Helvetica, Sans-serif;
+}
+@media screen and (max-width: 800px) {
+  .parent .resume .heading {
+    margin-top: 10px;
+  }
+}
+.parent .resume .heading h4 {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  color: #898989;
+  font-size: 14px;
+}
+.parent .resume .text-color {
+  color: #e74c3c;
+}
+.parent footer .text {
+  color: #898989;
+  font-size: 15px;
+}
+.parent footer .text a {
+  color: #4f4d47;
+  font-size: 13px;
+}
+.parent footer .text a:hover {
+  color: #898989;
+  transition: all 0.25s ease-in-out;
+}
+
+.parent .hat-desgin a.btn, .parent .collection .btn {
+  padding: 15px 30px;
+  border: 2px solid #dadada;
+  color: #898989;
+  border-radius: 0%;
+  letter-spacing: 3px;
+}
+
+.parent .hat-desgin h1, .parent .about .text h3, .parent .collection h3, .parent .resume h2 {
+  font-family: "Qwigley", Helvetica, Sans-serif;
+  font-weight: 600;
+}
+
+.parent .hat-desgin .hr, .parent .about .text .hr, .parent .collection .hr, .parent .resume .hr {
+  width: 15px;
+  border-bottom: 2px solid black;
+}
+
+.parent header nav.navbar-light .navbar-nav, .parent .news p, .parent .about .text, .parent footer .text {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 15px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

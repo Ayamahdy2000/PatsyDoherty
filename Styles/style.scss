@@ -1,0 +1,467 @@
+@import "_color.scss";
+
+
+body {
+    background-color: white;
+    background-image: url(../Images/bg.jpg);
+    background-repeat: repeat;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+.parent {
+    width: 90%;
+    border: 6px solid #eaeaea;
+    background: #ffff;
+    margin: 70px auto;
+
+    header {
+
+        //  
+        .navbar-brand {
+            font-family: 'Qwigley', Helvetica, Sans-serif;
+            color: $brandcolor;
+            font-size: 50px;
+            font-weight: 400;
+
+        }
+
+        .title {
+            font-size: 11px;
+            color: $maincolor;
+        }
+
+        nav {
+            &.navbar-light {
+                .navbar-toggler {
+                    margin: 0 0 0 auto;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .navbar-nav {
+                    @extend %border;
+
+
+
+                    .nav-link {
+                        color: $textcolor;
+                        margin-left: 13px;
+                        font-size: 15px;
+
+                        &.active {
+                            color: black;
+                        }
+
+                        &:hover {
+                            color: $maincolor;
+                            transition: all 0.25s ease-in-out;
+                        }
+
+                        &:focus {
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .hat-desgin {
+
+        h1 {
+            @extend %heading;
+
+        }
+
+        .hr {
+            @extend %hr;
+
+        }
+
+        h2 {
+            color: $textcolor;
+            font-size: 14px;
+            color: $subcolor;
+
+        }
+
+        a {
+            &.btn {
+                @extend %btn;
+
+                &:hover,
+                &:focus {
+                    border: 2px solid $brandcolor;
+                    color: $brandcolor;
+                    transition: all 0.25s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .news {
+        p {
+            color: $subcolor;
+            font-size: 15px;
+            @extend %border;
+
+
+            span {
+                a {
+                    color: #e74c3c;
+
+                    &:hover {
+                        text-decoration: underline $subcolor;
+                        color: $subcolor;
+                    }
+                }
+            }
+        }
+
+        .home-photo {
+            position: relative;
+
+            .box {
+                border: 15px solid #fff;
+
+                height: 80%;
+                position: absolute;
+                z-index: 1;
+                top: 8%;
+                right: 8%;
+
+
+            }
+        }
+    }
+
+    .about {
+        .text {
+            @extend %border;
+
+            h3 {
+                @extend %heading;
+            }
+
+            .hr {
+                @extend %hr;
+            }
+
+            p {
+                font-family: 'Oxygen', sans-serif;
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 1.7em;
+                color: $subcolor;
+                margin-top: 5px;
+
+                span {
+                    text-transform: uppercase;
+                    color: $brandcolor;
+                }
+            }
+
+            .left {
+                background-color: #495057;
+                color: #ffff;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 25px;
+            }
+
+            .right {
+                h4 {
+                    font-size: 15px;
+                    color: $subcolor;
+                    font-family: 'Oxygen', sans-serif;
+                    font-weight: 400;
+
+                }
+
+                p {
+                    color: $brandcolor;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .first-services {
+        position: relative;
+
+        .heading-box {
+            position: absolute;
+            top: 130px;
+            right: 20px;
+            background-color: $backgroundcolor;
+            color: $brandcolor;
+            padding: 20px 0 15px;
+            text-align: center;
+            width: 40%;
+            z-index: 1;
+
+            h4 {
+                font-size: 18px;
+                font-family: 'Oxygen', sans-serif;
+                font-weight: 600;
+            }
+
+            @media screen and (max-width:800px) {
+                position: static;
+                // margin-top: 30px;
+                width: 70%;
+                margin: 30px;
+                display: flex;
+                justify-content: center;
+                padding: 15px 0 5px;
+
+                h4 {
+                    font-size: 15px;
+
+
+                }
+            }
+        }
+
+        .box {
+            @media screen and (max-width:800px) {
+                display: none;
+            }
+
+            border: 15px solid #fff;
+
+            height: 60%;
+            position: absolute;
+
+            top: 20%;
+            right: 15%;
+        }
+
+        .box-height {
+            height: 50%;
+        }
+
+        .text {
+            color: #e74c3c;
+            font-weight: 300;
+        }
+    }
+
+    .collection {
+        h3 {
+            @extend %heading;
+
+        }
+
+        .hr {
+            @extend %hr;
+        }
+
+        p {
+            font-size: 15px;
+            color: $subcolor;
+        }
+
+        .btn {
+            @extend %btn;
+            background-color: transparent;
+
+            &:hover {
+                background: #e0e0e0;
+                box-shadow: none;
+                transition: all 0.25s ease-in-out;
+            }
+        }
+
+        .active {
+
+            background: #e0e0e0;
+            box-shadow: none;
+
+        }
+
+        figure {
+            position: relative;
+
+            &.effect-moses {
+                background: -webkit-linear-gradient(-45deg, #EC65B7 0%, #05E0D8 100%);
+                background: linear-gradient(-45deg, #EC65B7 0%, #05E0D8 100%);
+
+
+                img {
+                    opacity: 0.85;
+
+                }
+
+                figcaption {
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    padding: 20px;
+                    width: 100%;
+                    height: 100%;
+
+                    h2 {
+                        width: 50%;
+                        font-size: 1.6em;
+                        color: #fff;
+                        border-top: 2px solid #dadada;
+                        padding: 20px;
+                    }
+
+                    p {
+                        // display: none;
+                        width: 45%;
+                        border-top: 2px solid #dadada;
+                        padding: 20px;
+                        letter-spacing: 1px;
+                        font-size: 0.9em;
+                        color: white;
+                        text-align: right;
+                        font-family: 'Oxygen', sans-serif;
+                        opacity: 0;
+                        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                        transition: opacity 0.35s, transform 0.35s;
+                        -webkit-transform: translate3d(-50%, -50%, 0);
+                        transform: translate3d(-50%, -50%, 0);
+                    }
+                }
+
+                &:hover {
+                    background: linear-gradient(-45deg, #EC65B7 0%, #05E0D8 100%);
+
+                    img {
+                        opacity: 0.6;
+                    }
+
+                    p {
+                        opacity: 1;
+                        -webkit-transform: translate3d(150px, 150px, 0);
+                        transform: translate3d(150px, 150px, 0);
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .resume {
+        h2 {
+            @extend %heading;
+        }
+
+        .hr {
+            @extend %hr;
+        }
+
+        .data {
+            font-family: 'Oxygen', sans-serif;
+            font-weight: 400;
+            font-size: 10px;
+            color: #2f2f2f;
+
+            @media screen and (max-width:800px) {
+                margin-top: 10px;
+            }
+        }
+
+        p {
+            font-family: 'Oxygen', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #2f2f2f;
+            &.sub-p{
+                color: $subcolor;
+            }
+        }
+
+        .line {
+            border-top: 1px solid $backgroundcolor;
+            text-align: center;
+
+            &::after {
+                content: "resume";
+                position: relative;
+                display: inline-block;
+                position: relative;
+                top: -0.9em;
+                font-size: 18px;
+                color: $subcolor;
+                padding: 0 0.25em;
+                background: white;
+                font-family: 'Qwigley', Helvetica, Sans-serif;
+            }
+        }
+
+        .heading {
+            @media screen and (max-width:800px) {
+                margin-top: 10px;
+            }
+
+            h4 {
+                font-family: 'Oxygen', sans-serif;
+                font-weight: 400;
+                color: $subcolor;
+                font-size: 14px;
+            }
+
+        }
+
+        .text-color {
+            color: #e74c3c;
+        }
+    }
+
+    footer {
+        .text {
+            color: $subcolor;
+            font-size: 15px;
+            @extend %border;
+
+            a {
+                color: $brandcolor;
+                font-size: 13px;
+
+                &:hover {
+                    color: $subcolor;
+                    transition: all 0.25s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+%btn {
+    padding: 15px 30px;
+    border: 2px solid #dadada;
+    color: $subcolor;
+    border-radius: 0%;
+    letter-spacing: 3px;
+
+}
+
+%heading {
+    font-family: 'Qwigley', Helvetica, Sans-serif;
+    font-weight: 600;
+}
+
+%hr {
+    width: 15px;
+    border-bottom: 2px solid black;
+}
+
+%border {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 15px 0;
+}
